@@ -12,4 +12,4 @@ serveur.get(routeToto,function(request,response){
 serveur.post("/toto",function(request,response){
 	response.send("message venant de toto en post");
 });
-serveur.listen(12107);
+serveur.listen(process.env.PORT || 12107);
